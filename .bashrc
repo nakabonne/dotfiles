@@ -20,6 +20,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias lg='lazygit'
 
 # vi mode
 #set -o vi

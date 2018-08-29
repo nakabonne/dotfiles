@@ -1,7 +1,6 @@
 if [ -f ~/.bashrc ] ; then
   . ~/.bashrc
 fi
-# 端末ごとの設定
 if [ -f ~/.bash_local ] ; then
   . ~/.bash_local
 fi
@@ -39,7 +38,7 @@ export CPATH=/usr/local/opt/openssl/include:$LD_LIBRARY_PATH
 export CLOUDSDK_PYTHON=$(which python2)
 #export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
-# brew caskの保存先
+# save place for brew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # ls

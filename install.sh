@@ -40,6 +40,7 @@ else
 fi
 if type "go"; then
   go get github.com/motemen/ghq
+  go get github.com/jesseduffield/lazygit
 fi
 
 
