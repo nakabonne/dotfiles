@@ -148,3 +148,11 @@ hook_add = '''
   :command Po PrevimOpen
 '''
 # -------------------------------------------------------------
+
+# google翻訳
+[[plugins]]
+repo = 'haya14busa/vim-open-googletranslate'
+hook_add = '''
+  let g:opengoogletranslate#openbrowsercmd = 'electron-open --without-focus'
+  vnoremap t :OpenGoogleTranslate<CR>
+'''
