@@ -156,3 +156,7 @@ hook_add = '''
   let g:opengoogletranslate#openbrowsercmd = 'electron-open --without-focus'
   vnoremap t :OpenGoogleTranslate<CR>
 '''
+
+# nginx syntax highlight
+[[plugins]]
+repo = 'chr4/nginx.vim'
