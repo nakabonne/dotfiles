@@ -38,6 +38,7 @@ hook_add = '''
   :command Ge GoErrCheck
   :command Gi GoImports
   :command Gc GoCallers
+  :command Gif GoIfErr
 '''
 
 [[plugins]]
