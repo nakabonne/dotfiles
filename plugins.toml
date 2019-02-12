@@ -11,6 +11,9 @@ hook_add = '''
   call denite#custom#option('default', 'prompt', '>')
 
   nnoremap <silent> ,g :<C-u>Denite -buffer-name=search -mode=normal grep<CR>
+  " grep結果再表示
+  nnoremap <silent> ,r :<C-u>Denite -resume -buffer-name=search<CR>
+
   call denite#custom#var('grep', 'command', ['pt'])
 	call denite#custom#var('grep', 'default_opts',
 			\ ['--nogroup', '--nocolor', '--smart-case'])
