@@ -79,6 +79,9 @@ hook_add = '''
   call denite#custom#map('insert', 'jj', '<denite:enter_mode:normal>')
 '''
 
+[[plugins]]
+repo = 'simeji/winresizer'
+
 # カラースキーマ
 [[plugins]]
 repo = 'tomasr/molokai'
