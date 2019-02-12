@@ -1,15 +1,96 @@
+##############
+### Common ###
+##############
+
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+  call denite#custom#option('default', 'prompt', '>')
+
+  nnoremap <silent> ,g :<C-u>Denite -buffer-name=search -mode=normal grep<CR>
+  call denite#custom#var('grep', 'command', ['pt'])
+	call denite#custom#var('grep', 'default_opts',
+			\ ['--nogroup', '--nocolor', '--smart-case'])
+	call denite#custom#var('grep', 'recursive_opts', [])
+	call denite#custom#var('grep', 'pattern_opt', [])
+	call denite#custom#var('grep', 'separator', ['--'])
+	call denite#custom#var('grep', 'final_opts', [])
+
+  call denite#custom#map('insert', 'jj', '<denite:enter_mode:normal>')
+'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  map <C-n> :NERDTreeToggle<CR>
+'''
+
+# ファイル曖昧検索
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+
 # カッコを閉じる
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
+# resizing of windows
+[[plugins]]
+repo = 'simeji/winresizer'
+
+# カラースキーマ
+[[plugins]]
+repo = 'tomasr/molokai'
+hook_add = '''
+  colorscheme molokai
+  let g:molokai_original = 1
+  let g:rehash256 = 1
+'''
+
+[[plugins]]
+repo = 'flazz/vim-colorschemes'
+
+# 非同期補完
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+  if !has('nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
+  let g:deoplete#enable_at_startup = 1
+'''
+
 # 構文チェック
-#[[plugins]]
-#repo = 'scrooloose/syntastic'
 [[plugins]]
 repo = 'neomake/neomake'
 hook_add = '''
   autocmd! BufWritePost * Neomake
 '''
+
+# snippets
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+# terminal
+[[plugins]]
+repo = 'kassio/neoterm'
+hook_add = '''
+  let g:neoterm_autoinsert = 1
+  let g:neoterm_default_mod='belowright'
+  tnoremap <silent> jj <C-\><C-n><C-w>
+  nnoremap <silent> ,t :Tnew<CR><C-w>
+'''
+
+
+################
+### Language ###
+################
 
 [[plugins]]
 repo = 'fatih/vim-go'
@@ -41,67 +122,14 @@ hook_add = '''
   :command Gif GoIfErr
 '''
 
+# nginx syntax highlight
 [[plugins]]
-repo = 'Shougo/dein.vim'
-
-[[plugins]]
-repo = 'SirVer/ultisnips'
-
-[[plugins]]
-repo = 'honza/vim-snippets'
-
-[[plugins]]
-repo = 'tpope/vim-fugitive'
-
-[[plugins]]
-repo = 'flazz/vim-colorschemes'
-
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_add = '''
-  map <C-n> :NERDTreeToggle<CR>
-'''
-
-[[plugins]]
-repo = 'Shougo/denite.nvim'
-hook_add = '''
-  call denite#custom#option('default', 'prompt', '>')
-
-  nnoremap <silent> ,g :<C-u>Denite -buffer-name=search -mode=normal grep<CR>
-  call denite#custom#var('grep', 'command', ['pt'])
-	call denite#custom#var('grep', 'default_opts',
-			\ ['--nogroup', '--nocolor', '--smart-case'])
-	call denite#custom#var('grep', 'recursive_opts', [])
-	call denite#custom#var('grep', 'pattern_opt', [])
-	call denite#custom#var('grep', 'separator', ['--'])
-	call denite#custom#var('grep', 'final_opts', [])
-
-  call denite#custom#map('insert', 'jj', '<denite:enter_mode:normal>')
-'''
-
-[[plugins]]
-repo = 'simeji/winresizer'
-
-# カラースキーマ
-[[plugins]]
-repo = 'tomasr/molokai'
-hook_add = '''
-  colorscheme molokai
-  let g:molokai_original = 1
-  let g:rehash256 = 1
-'''
+repo = 'chr4/nginx.vim'
 
 
-# 非同期補完
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_add = '''
-  if !has('nvim')
-    call dein#add('roxma/nvim-yarp')
-    call dein#add('roxma/vim-hug-neovim-rpc')
-  endif
-  let g:deoplete#enable_at_startup = 1
-'''
+###########
+### Git ###
+###########
 
 # git差分をヴィジュアル表示
 [[plugins]]
@@ -110,33 +138,14 @@ hook_add = '''
   set updatetime=100
 '''
 
-# git
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
-# ファイル曖昧検索
-[[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
 
-# aceのシンタックスハイライト
-[[plugins]]
-repo = 'yosssi/vim-ace'
+################
+### Markdown ###
+################
 
-# solidityのシンタックスハイライト
-[[plugins]]
-repo = 'tomlion/vim-solidity'
-
-# terminal
-[[plugins]]
-repo = 'kassio/neoterm'
-hook_add = '''
-  let g:neoterm_autoinsert = 1
-  let g:neoterm_default_mod='belowright'
-  tnoremap <silent> jj <C-\><C-n><C-w>
-  nnoremap <silent> ,t :Tnew<CR><C-w>
-'''
-
-# markdown-----------------------------------------------------
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 [[plugins]]
@@ -151,7 +160,11 @@ hook_add = '''
   let g:previm_open_cmd='open -a Safari'
   :command Po PrevimOpen
 '''
-# -------------------------------------------------------------
+
+
+##############
+### Others ###
+##############
 
 # google翻訳
 [[plugins]]
@@ -160,7 +173,3 @@ hook_add = '''
   let g:opengoogletranslate#openbrowsercmd = 'electron-open --without-focus'
   vnoremap t :OpenGoogleTranslate<CR>
 '''
-
-# nginx syntax highlight
-[[plugins]]
-repo = 'chr4/nginx.vim'
