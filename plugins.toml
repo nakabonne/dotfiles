@@ -129,6 +129,9 @@ hook_add = '''
 [[plugins]]
 repo = 'chr4/nginx.vim'
 
+# Jenkinsfile syntax highlight
+[[plugins]]
+repo = 'martinda/Jenkinsfile-vim-syntax'
 
 ###########
 ### Git ###
