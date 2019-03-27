@@ -125,6 +125,10 @@ hook_add = '''
   :command Gif GoIfErr
 '''
 
+# C/C++ コード補完
+[[plugins]]
+repo = 'justmao945/vim-clang'
+
 # nginx syntax highlight
 [[plugins]]
 repo = 'chr4/nginx.vim'
