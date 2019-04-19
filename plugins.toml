@@ -129,6 +129,10 @@ hook_add = '''
 [[plugins]]
 repo = 'justmao945/vim-clang'
 
+# C/C++ フォーマッター
+[[plugins]]
+repo = 'rhysd/vim-clang-format'
+
 # nginx syntax highlight
 [[plugins]]
 repo = 'chr4/nginx.vim'
