@@ -90,6 +90,14 @@ hook_add = '''
   nnoremap <silent> ,t :Tnew<CR><C-w>
 '''
 
+# replace
+[[plugins]]
+repo = 'kana/vim-operator-replace'
+hook_add = '''
+  map _  <Plug>(operator-replace)
+'''
+[[plugins]]
+repo = 'kana/vim-operator-user'
 
 ################
 ### Language ###
