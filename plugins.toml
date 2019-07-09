@@ -7,6 +7,9 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
+# 最新バージョンの破壊的変更によりgrepが効かないため暫定対応
+# 詳細 -> https://github.com/Shougo/denite.nvim/issues/648#issuecomment-499296944
+rev = '29bfd4c53271c7a150def2388e059746ae4c1713'
 hook_add = '''
   call denite#custom#option('default', 'prompt', '>')
 
