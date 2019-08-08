@@ -130,6 +130,7 @@ hook_add = '''
   :command Gi GoImports
   :command Gc GoCallers
   :command Gif GoIfErr
+  :command Gf GoFillStruct
 '''
 
 # C/C++ コード補完
