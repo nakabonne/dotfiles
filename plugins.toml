@@ -38,6 +38,14 @@ hook_add = '''
   map <C-n> :NERDTreeToggle<CR>
 '''
 
+# statuslineの表示
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#formatter = 'unique_tail'
+'''
+
 # ファイル曖昧検索
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
@@ -127,7 +135,6 @@ hook_add = '''
   let g:go_metalinter_autosave = 1
   let g:go_metalinter_deadline = "7s"
 
-  :command Ge GoErrCheck
   :command Gi GoImports
   :command Gc GoCallers
   :command Gif GoIfErr
