@@ -38,6 +38,7 @@ export LD_LIBRARY_PATH=/usr/local/opt/openssl/lib:$LD_LIBRARY_PATH
 export CPATH=/usr/local/opt/openssl/include:$LD_LIBRARY_PATH
 
 # GCP
+export PATH=$HOME/google-cloud-sdk/bin:$PATH
 export CLOUDSDK_PYTHON=$(which python2)
 #export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
