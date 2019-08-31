@@ -114,6 +114,10 @@ hook_add = '''
 [[plugins]]
 repo = 'kana/vim-operator-user'
 
+# spaceハイライト
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+
 ################
 ### Language ###
 ################
