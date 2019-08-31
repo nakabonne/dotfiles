@@ -41,6 +41,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias lg='lazygit'
+alias gci='golangci-lint run --enable-all --new-from-rev HEAD~ -D gochecknoinits -D gochecknoglobals'
 
 # vi mode
 #set -o vi
