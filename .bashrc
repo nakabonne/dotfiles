@@ -9,13 +9,12 @@ ENHANCD_FILTER=fzf; export ENHANCD_FILTER
 # direnv
 eval "$(direnv hook bash)"
 
-# prompt 
+# prompt
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
 }
 function promps {
-    # 色は気分で変えたいかもしれないので変す宣言しておく
-    #THEIP=$(hostname -i)
+    # 色は気分で変えたいかもしれないので変数宣言しておく
     local  BLUE="\[\e[1;34m\]"
     local  RED="\[\e[1;31m\]"
     local  GREEN="\[\e[1;32m\]"
