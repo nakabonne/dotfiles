@@ -1,17 +1,21 @@
 #!/bin/bash
 
 # brew
-brew=("tmux" "ripgrep" "go" "fzf" "neovim" "python3" "rbenv" "ruby-build" "direnv" "desk" "hugo" "tree" "jq" "pt" "htop")
-cask=("iterm2")
+tap=("caskroom/fonts")
+brew=("tmux" "ripgrep" "go" "fzf" "neovim" "python3" "rbenv" "ruby-build" "direnv" "desk" "hugo" "tree" "jq" "pt" "htop" "starship")
+cask=("iterm2" "font-fira-code")
 if type "brew"; then
   echo "$(tput setaf 2)Already installed Homebrew ✔︎$(tput sgr0)"
 else
   echo "Installing Homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-if type "brew"; then
+if type "tap"; then
+  for b in ${tap[@]}; do
+    brew tap $b
+  done
   for b in ${brew[@]}; do
-    brew install $b 
+    brew install $b
   done
   for c in ${cask[@]}; do
     brew cask install $c
@@ -56,7 +60,7 @@ if type "ghq"; then
 fi
 
 
-# pip3 
+# pip3
 if type "pip3"; then
   echo "$(tput setaf 2)Already installed pip3 ✔︎$(tput sgr0)"
 else

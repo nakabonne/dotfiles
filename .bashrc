@@ -9,6 +9,9 @@ ENHANCD_FILTER=fzf; export ENHANCD_FILTER
 # direnv
 eval "$(direnv hook bash)"
 
+# starship
+eval "$(starship init bash)"
+
 # prompt
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
@@ -41,6 +44,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias lg='lazygit'
 alias gci='golangci-lint run --enable-all --new-from-rev HEAD~ -D gochecknoinits -D gochecknoglobals'
+# TODO: 暫定対応
+#alias python="python3"
 
 # vi mode
 #set -o vi
