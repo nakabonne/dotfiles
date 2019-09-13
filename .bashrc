@@ -12,6 +12,21 @@ eval "$(direnv hook bash)"
 # starship
 eval "$(starship init bash)"
 
+# alias
+alias vi='nvim'
+alias g='git'
+alias ls='ls -CFG'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias lg='lazygit'
+alias gci='golangci-lint run --enable-all --new-from-rev HEAD~ -D gochecknoinits -D gochecknoglobals'
+
+# Hook for desk activation
+[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
+
+
 # prompt
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
@@ -31,25 +46,4 @@ function promps {
     local BASE="\u"
     PS1="${TITLEBAR}${GREEN}${BASE}${WHITE}: ${RED}\W${GRAY}\$(parse_git_branch)${BLUE}\${WHITE} \[\e[0m\]\n\\$ "
 }
-promps
-
-
-# alias
-alias vi='nvim'
-alias g='git'
-alias ls='ls -CFG'
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias lg='lazygit'
-alias gci='golangci-lint run --enable-all --new-from-rev HEAD~ -D gochecknoinits -D gochecknoglobals'
-# TODO: 暫定対応
-#alias python="python3"
-
-# vi mode
-#set -o vi
-#bind '"jj":vi-movement-mode'
-
-# Hook for desk activation
-[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
+#promps
