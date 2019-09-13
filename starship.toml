@@ -2,7 +2,7 @@
 truncation_length = 1
 
 [git_branch]
-symbol = "🌱 "
+symbol = "ᚠ "
 
 [golang]
 disabled = true
