@@ -47,3 +47,14 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # ls
 export LSCOLORS=xbfxcxdxbxegedabagacad
+
+# Add command to PROMPT_COMMAND (runs before each command)
+# Makes sure ithe command is not already in PROMPT_COMMAND
+addToPromptCommand() {
+  export PROMPT_COMMAND="$1; $PROMPT_COMMAND";
+}
+
+# Set iTerm tab title to show current directory
+if [ $ITERM_SESSION_ID ]; then
+  addToPromptCommand 'echo -ne "\033];${PWD##*/}\007"'
+fi
