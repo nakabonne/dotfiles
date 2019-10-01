@@ -45,6 +45,7 @@ fi
 if type "go"; then
   go get github.com/motemen/ghq
   go get github.com/jesseduffield/lazygit
+  go get github.com/golangci/golangci-lint/cmd/golangci-lint
 fi
 
 
