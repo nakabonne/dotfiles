@@ -136,7 +136,6 @@ hook_add = '''
 
   let g:go_metalinter_autosave_enabled = ['vet']
   let g:go_metalinter_enabled = ['vet']
-  let g:go_metalinter_command = "gometalinter"
   let g:go_metalinter_autosave = 1
   let g:go_metalinter_deadline = "5s"
 
@@ -144,6 +143,8 @@ hook_add = '''
   :command Gc GoCallers
   :command Gif GoIfErr
   :command Gf GoFillStruct
+  " カーソル下のinterfaceを実装する構造体一覧
+  :command Gimpl GoImplements
 '''
 
 # C/C++ コード補完
