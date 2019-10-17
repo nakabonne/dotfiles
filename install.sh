@@ -2,7 +2,7 @@
 
 # brew
 tap=("caskroom/fonts")
-brew=("tmux" "ripgrep" "go" "fzf" "neovim" "python3" "rbenv" "ruby-build" "direnv" "desk" "hugo" "tree" "jq" "pt" "htop" "starship" "denisidoro/tools/navi" "hub")
+brew=("tmux" "ripgrep" "go" "fzf" "neovim" "python3" "rbenv" "ruby-build" "direnv" "desk" "hugo" "tree" "jq" "pt" "htop" "starship" "denisidoro/tools/navi" "hub" "golangci/tap/golangci-lint")
 cask=("iterm2" "font-fira-code")
 if type "brew"; then
   echo "$(tput setaf 2)Already installed Homebrew ✔︎$(tput sgr0)"
@@ -45,7 +45,6 @@ fi
 if type "go"; then
   go get github.com/motemen/ghq
   go get github.com/jesseduffield/lazygit
-  go get github.com/golangci/golangci-lint/cmd/golangci-lint
 fi
 
 
