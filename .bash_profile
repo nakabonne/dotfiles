@@ -5,8 +5,6 @@ if [ -f ~/.bash_local ] ; then
   . ~/.bash_local
 fi
 
-export PATH=/usr/local/bin:$PATH
-export EDITOR=nvim
 
 # go_lang
 export PATH="/usr/local/go/bin:$PATH"
@@ -27,6 +25,7 @@ eval "$(rbenv init -)"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # neovim
+export EDITOR=nvim
 export XDG_CONFIG_HOME="$HOME/.config"
 export ANYENV_ROOT="$HOME/.anyenv"
 export PATH=$PATH:"$HOME/.anyenv/bin"
@@ -40,7 +39,8 @@ export CPATH=/usr/local/opt/openssl/include:$LD_LIBRARY_PATH
 # GCP
 export PATH=$HOME/google-cloud-sdk/bin:$PATH
 export CLOUDSDK_PYTHON=$(which python2)
-#export PATH=/usr/local/opt/python/libexec/bin:$PATH
+
+export PATH=/usr/local/bin:$PATH
 
 # save place for brew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
