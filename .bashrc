@@ -3,7 +3,7 @@ if [ -f ~/.bashrc_local ] ; then
 fi
 
 # enhancd
-source $HOME/.ghq/github.com/b4b4r07/enhancd/init.sh
+source $HOME/src/github.com/b4b4r07/enhancd/init.sh
 ENHANCD_FILTER=fzf; export ENHANCD_FILTER
 
 # direnv
