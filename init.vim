@@ -54,6 +54,7 @@ set shiftwidth=2
 augroup fileTypeIndent
     autocmd!
     autocmd BufNewFile,BufRead *.php setlocal tabstop=4 softtabstop=4 shiftwidth=4
+    autocmd BufNewFile,BufRead *.proto setlocal tabstop=4 softtabstop=4 shiftwidth=4
 augroup END
 " 検索結果をハイライト
 set hlsearch
