@@ -58,3 +58,6 @@ addToPromptCommand() {
 if [ $ITERM_SESSION_ID ]; then
   addToPromptCommand 'echo -ne "\033];${PWD##*/}\007"'
 fi
+
+# for golintui
+export LC_CTYPE=en_US.UTF-8
