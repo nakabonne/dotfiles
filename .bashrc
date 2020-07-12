@@ -21,8 +21,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias lg='lazygit'
-alias gci='golangci-lint run --enable-all --new-from-rev HEAD~ -D gochecknoinits -D gochecknoglobals'
-alias gdes='git describe --tags --always --dirty'
+alias k='kube-prompt'
 
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
