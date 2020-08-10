@@ -48,6 +48,10 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # ls
 export LSCOLORS=xbfxcxdxbxegedabagacad
 
+# To be hidden the message which warns that the default shell is zsh.
+# See more: https://support.apple.com/ja-jp/HT208050
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Add command to PROMPT_COMMAND (runs before each command)
 # Makes sure ithe command is not already in PROMPT_COMMAND
 addToPromptCommand() {
