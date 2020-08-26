@@ -2,7 +2,7 @@
 
 # brew
 tap=("caskroom/fonts")
-brew=("tmux" "ripgrep" "go" "fzf" "python3" "rbenv" "ruby-build" "direnv" "desk" "hugo" "tree" "jq" "pt" "htop" "starship" "denisidoro/tools/navi" "hub" "golangci/tap/golangci-lint" "ghq" "jesseduffield/lazygit/lazygit" "lazygit" "bash-completion" "c-bata/kube-prompt/kube-prompt")
+brew=("tmux" "ripgrep" "go" "fzf" "python3" "rbenv" "ruby-build" "direnv" "desk" "hugo" "tree" "jq" "pt" "htop" "starship" "denisidoro/tools/navi" "hub" "golangci/tap/golangci-lint" "ghq" "jesseduffield/lazygit/lazygit" "bash-completion" "c-bata/kube-prompt/kube-prompt")
 cask=("iterm2" "font-fira-code" "kap")
 if type "brew"; then
   echo "$(tput setaf 2)Already installed Homebrew ✔︎$(tput sgr0)"
