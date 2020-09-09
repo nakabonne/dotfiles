@@ -23,6 +23,7 @@ alias .....="cd ../../../.."
 alias lg='lazygit'
 alias k='kube-prompt'
 alias gt='golintui'
+alias gdes='git describe --tags --always'
 
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
