@@ -147,22 +147,6 @@ hook_add = '''
   :command Gimpl GoImplements
 '''
 
-# C/C++ コード補完
-[[plugins]]
-repo = 'justmao945/vim-clang'
-
-# C/C++ フォーマッター
-[[plugins]]
-repo = 'rhysd/vim-clang-format'
-
-# nginx syntax highlight
-[[plugins]]
-repo = 'chr4/nginx.vim'
-
-# Jenkinsfile syntax highlight
-[[plugins]]
-repo = 'martinda/Jenkinsfile-vim-syntax'
-
 ###########
 ### Git ###
 ###########
