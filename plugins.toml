@@ -134,10 +134,10 @@ hook_add = '''
   let g:go_highlight_types = 1
   let g:go_highlight_fields = 1
 
-  let g:go_metalinter_autosave_enabled = ['vet']
-  let g:go_metalinter_enabled = ['vet']
-  let g:go_metalinter_autosave = 1
-  let g:go_metalinter_deadline = "5s"
+  let g:go_metalinter_autosave = 0
+  " let g:go_metalinter_autosave_enabled = ['vet']
+  " let g:go_metalinter_enabled = ['vet']
+  " let g:go_metalinter_deadline = "5s"
 
   :command Gi GoImports
   :command Gc GoCallers
