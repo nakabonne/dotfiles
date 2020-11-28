@@ -52,6 +52,9 @@ export LSCOLORS=xbfxcxdxbxegedabagacad
 # See more: https://support.apple.com/ja-jp/HT208050
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# for pbgopy. See: https://github.com/nakabonne/pbgopy
+export PBGOPY_SERVER=http://raspberrypi.local:9090
+
 # Add command to PROMPT_COMMAND (runs before each command)
 # Makes sure ithe command is not already in PROMPT_COMMAND
 addToPromptCommand() {
