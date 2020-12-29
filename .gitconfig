@@ -12,14 +12,15 @@
   co = checkout
 [core]
 	editor = nvim
-
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
-
 [ghq]
   root = ~/src
-
-[include]
-  path = ~/.gitconfig_local
 [pull]
 	rebase = false
+[user]
+  signingkey = EF558144
+[gpg]
+  program = gpg
+[commit]
+  gpgsign = true
