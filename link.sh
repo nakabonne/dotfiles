@@ -8,6 +8,9 @@ ln -sf ~/dotfiles/plugins.toml ~/.config/dein/plugins.toml
 
 ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
 
+mkdir ~/.cargo
+ln -sf ~/dotfiles/cargo.yaml ~/.cargo/config.yaml
+
 # TODO: 自動化
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
