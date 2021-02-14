@@ -122,6 +122,12 @@ repo = 'ntpeters/vim-better-whitespace'
 ### Language ###
 ################
 
+# LSP
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
 [[plugins]]
 repo = 'fatih/vim-go'
 hook_add = '''
@@ -145,6 +151,12 @@ hook_add = '''
   :command Gf GoFillStruct
   " カーソル下のinterfaceを実装する構造体一覧
   :command Gimpl GoImplements
+'''
+
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+hook_add = '''
+  let g:rustfmt_autosave = 1
 '''
 
 ###########
