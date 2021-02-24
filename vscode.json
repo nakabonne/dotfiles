@@ -1,0 +1,13 @@
+{
+    "go.formatTool": "gofmt",
+
+    "rust-client.engine": "rust-analyzer",
+
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vimrc",
+
+
+    "editor.formatOnSave": true,
+
+    "workbench.colorTheme": "Monokai"
+}
