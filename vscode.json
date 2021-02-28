@@ -1,11 +1,14 @@
 {
+
+    "editor.formatOnSave": true,
+
+    "workbench.colorTheme": "Monokai",
+
     "go.formatTool": "gofmt",
 
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "$HOME/.vimrc",
     "vim.useSystemClipboard": true,
 
-    "editor.formatOnSave": true,
-
-    "workbench.colorTheme": "Monokai"
+    "rust-client.engine": "rust-analyzer"
 }
