@@ -1,14 +1,14 @@
 {
-
-    "editor.formatOnSave": true,
-
-    "workbench.colorTheme": "Monokai",
-
-    "go.formatTool": "gofmt",
-
-    "vim.vimrc.enable": true,
-    "vim.vimrc.path": "$HOME/.vimrc",
-    "vim.useSystemClipboard": true,
-
-    "rust-client.engine": "rust-analyzer"
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Monokai",
+  "go.formatTool": "gofmt",
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "$HOME/.vimrc",
+  "vim.useSystemClipboard": true,
+  "redhat.telemetry.enabled": false,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+"editor.tabSize": 2
 }
