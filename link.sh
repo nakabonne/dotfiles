@@ -4,7 +4,7 @@ ln -sf ~/dotfiles/init.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/init.vim ~/.ideavimrc
 ln -sf ~/dotfiles/init.vim ~/.vimrc
 
-ln -sf ~/dotfiles/vscode.json ~/Library/ApplicationSupport/Code/User/settings.json
+ln -sf ~/dotfiles/vscode.json ~/Library/Application\ Support/Code/User/settings.json
 
 mkdir ~/.config/dein
 ln -sf ~/dotfiles/plugins.toml ~/.config/dein/plugins.toml
