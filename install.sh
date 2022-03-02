@@ -18,7 +18,7 @@ if type "tap"; then
     brew install $b
   done
   for c in ${cask[@]}; do
-    brew cask install $c
+    brew install --cask $c
   done
 
 fi
