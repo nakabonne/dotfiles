@@ -6,10 +6,8 @@ fi
 source $HOME/src/github.com/b4b4r07/enhancd/init.sh
 ENHANCD_FILTER=fzf; export ENHANCD_FILTER
 
-# direnv
-eval "$(direnv hook bash)"
-
 # starship
+export PATH=/opt/homebrew/bin:$PATH
 eval "$(starship init bash)"
 
 # alias

@@ -72,3 +72,5 @@ export LC_CTYPE=en_US.UTF-8
 # for bash_completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 source "$HOME/.cargo/env"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
