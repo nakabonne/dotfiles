@@ -17,11 +17,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
-# ruby
-export PATH=/usr/local/bin:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
@@ -73,6 +68,6 @@ export LC_CTYPE=en_US.UTF-8
 # for bash_completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-source "$HOME/.cargo/env"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+. "$HOME/.cargo/env"
