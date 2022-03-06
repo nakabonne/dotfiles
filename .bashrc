@@ -23,10 +23,6 @@ alias k='kube-prompt'
 alias gt='golintui'
 alias gdes='git describe --tags --always'
 
-# Hook for desk activation
-[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
-
-
 # prompt
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
@@ -46,7 +42,7 @@ function promps {
     local BASE="\u"
     PS1="${TITLEBAR}${GREEN}${BASE}${WHITE}: ${RED}\W${GRAY}\$(parse_git_branch)${BLUE}\${WHITE} \[\e[0m\]\n\\$ "
 }
-#promps
+
 source "$HOME/.cargo/env"
 
 eval "$(direnv hook bash)"
