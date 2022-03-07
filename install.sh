@@ -16,7 +16,17 @@ if type "tap"; then
   for c in ${cask[@]}; do
     brew install --cask $c
   done
+fi
 
+# git
+if type "git"; then
+  echo "$(tput setaf 2)Already installed Git ??$(tput sgr0)"
+else
+  echo "Installing Git..."
+  brew install git
+fi
+if type "git"; then
+  git clone https://github.com/riywo/anyenv ~/.anyenv
 fi
 
 # ghq
