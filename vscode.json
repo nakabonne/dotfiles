@@ -12,5 +12,8 @@
   },
   "editor.tabSize": 2,
   "workbench.startupEditor": "none",
-  "workbench.tree.indent": 16
+  "workbench.tree.indent": 16,
+  "files.watcherExclude": {
+    "**/.venv/**": true
+  }
 }
