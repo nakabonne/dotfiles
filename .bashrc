@@ -20,8 +20,10 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias lg='lazygit'
 alias k='kube-prompt'
-alias gt='golintui'
-alias gdes='git describe --tags --always'
+alias t='tmux'
+alias tn='tmux new -s'
+alias ta='tmux a -t'
+alias tk='tmux kill-server'
 
 # prompt
 function parse_git_branch {
