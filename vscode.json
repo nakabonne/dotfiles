@@ -15,5 +15,6 @@
   "workbench.tree.indent": 16,
   "files.watcherExclude": {
     "**/.venv/**": true
-  }
+  },
+  "editor.fontSize": 13
 }

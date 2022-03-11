@@ -18,3 +18,5 @@ ln -sf ~/dotfiles/cargo.toml ~/.cargo/config
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
+
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
