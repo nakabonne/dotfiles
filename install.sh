@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # brew
-brew=("tmux" "pyenv" "ripgrep" "go" "fzf" "python3" "direnv" "hugo" "tree" "jq" "pt" "htop" "starship" "denisidoro/tools/navi" "hub" "golangci/tap/golangci-lint" "ghq" "jesseduffield/lazygit/lazygit" "bash-completion" "c-bata/kube-prompt/kube-prompt" "caskroom/fonts/fonts")
+brew=("tmux" "pyenv" "ripgrep" "go" "fzf" "python3" "direnv" "hugo" "tree" "jq" "pt" "htop" "starship" "denisidoro/tools/navi" "ghq" "jesseduffield/lazygit/lazygit" "bash-completion" "c-bata/kube-prompt/kube-prompt" "caskroom/fonts/fonts")
 cask=("iterm2" "font-fira-code")
 if type "brew"; then
   echo "$(tput setaf 2)Already installed Homebrew ✔︎$(tput sgr0)"
