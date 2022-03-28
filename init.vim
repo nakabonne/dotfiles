@@ -4,16 +4,16 @@ if &compatible
 endif
 
 " Required:
-let s:dein_repo_dir = '/Users/'.$USER.'/.config/nvim/repos/github.com/Shougo/dein.vim'
+let s:dein_repo_dir = $HOME.'/.config/nvim/repos/github.com/Shougo/dein.vim'
 execute 'set runtimepath+='.s:dein_repo_dir
 
 " Required:
-if dein#load_state('/Users/'.$USER.'/.config/nvim/')
-  call dein#begin('/Users/'.$USER.'/.config/nvim/')
+if dein#load_state($HOME.'/.config/nvim/')
+  call dein#begin($HOME.'/.config/nvim/')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/Users/'.$USER.'/.config/nvim/repos/github.com/Shougo/dein.vim')
+  call dein#add($HOME.'/.config/nvim/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   let s:toml = '~/.config/dein/plugins.toml'
