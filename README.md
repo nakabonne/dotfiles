@@ -47,6 +47,8 @@ TOOD:
   - neovim: https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu (PPA is recommended)
   - dein.vim
     - https://github.com/Shougo/dein.vim#quick-start
+  - pt
+    - https://github.com/monochromegane/the_platinum_searcher/releases
   - ghq (via `go install`)
   - lazygit
   - go (via snap)
