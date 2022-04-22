@@ -16,5 +16,6 @@
   "files.watcherExclude": {
     "**/.venv/**": true
   },
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "editor.minimap.enabled": false
 }
