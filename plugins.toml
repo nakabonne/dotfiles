@@ -159,6 +159,9 @@ hook_add = '''
   let g:rustfmt_autosave = 1
 '''
 
+[[plugins]]
+repo = 'b4b4r07/vim-hcl'
+
 ###########
 ### Git ###
 ###########
