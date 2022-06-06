@@ -1,5 +1,7 @@
 # dotfiles
 
+### NOTE: This repository is DEPRECATED. Please refer to https://github.com/nakabonne/dotfiles-ansible
+
 OS X / Ubuntu dotfiles.
 
 
